@@ -1,0 +1,15 @@
+@startuml
+start
+
+:Login Admin or Customer;
+if (Admin or Customer?) then (Admin)
+  :Admin: Menambahkan Produk;
+  :Admin: Mengedit Produk;
+  :Admin: Menghapus Produk;
+  :Admin: Melihat Produk;
+elseif (Customer)
+  :Customer: Melihat Produk;
+endif
+
+stop
+@enduml

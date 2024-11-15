@@ -1,0 +1,15 @@
+@startuml
+
+actor Admin
+actor Customer
+
+rectangle "Sistem Toko" {
+    Admin -- (Tambah Produk)
+    Admin -- (Edit Produk)
+    Admin -- (Hapus Produk)
+    Admin -- (Lihat Produk)
+    
+    Customer -- (Lihat Produk)
+}
+
+@enduml
